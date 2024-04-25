@@ -156,7 +156,7 @@ public class EventHandler implements RequestHandler<ScheduledEvent, String> {
                 latestStatusForTrackingNumber.put(trackingNumber, lastKnownStatus);
             }
 
-            //Add to list of processed files
+            //Add to list of processed files, and made some change in comments
             filesProcessed.add(new KeyVersion(summary.getKey()));
             logger.log("logging Contents of the file" + fileContents);
         }
